@@ -1,0 +1,38 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "Student",
+      "targetTime": 11.1
+    },
+    {
+      "name": "Professor",
+      "targetTime": 22.641666666666666
+    },
+    {
+      "name": "Department",
+      "targetTime": 26.183333333333334
+    },
+    {
+      "name": "Major",
+      "targetTime": 30.725
+    },
+    {
+      "name": "Course",
+      "targetTime": 36.266666666666666
+    },
+    {
+      "name": "CourseGroup",
+      "targetTime": 45.80833333333333
+    },
+    {
+      "name": "Study",
+      "targetTime": 51.349999999999994
+    },
+    {
+      "name": "Enrollment",
+      "targetTime": 55.89166666666666
+    }
+  ],
+  "seed": 3407670611
+}

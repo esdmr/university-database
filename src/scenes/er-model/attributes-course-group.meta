@@ -1,0 +1,26 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "course-group",
+      "targetTime": 1.6
+    },
+    {
+      "name": "id",
+      "targetTime": 2.6582861732728738
+    },
+    {
+      "name": "term",
+      "targetTime": 3.69995283993954
+    },
+    {
+      "name": "class",
+      "targetTime": 4.741619506606206
+    },
+    {
+      "name": "timeSlot",
+      "targetTime": 5.783286173272873
+    }
+  ],
+  "seed": 1465156219
+}

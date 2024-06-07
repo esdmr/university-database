@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Main;
+	unicode-range: U+00-7F;
+	src:
+		local('CMU Serif'),
+		url("fonts/cmunrm.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: Main;
+	unicode-range: U+80-65F, U+66A-6EF, U+6FA-10FFFF;
+	src:
+		local('XB Yas'),
+		url("fonts/XB Yas.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: Main;
+	unicode-range: U+660-669, U+6F0-6F9;
+	src:
+		local('Persian Modern'),
+		url("fonts/persian-modern-regular.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: Code;
+	src:
+		local('JetBrains Mono'),
+		url("fonts/JetBrainsMono-Regular.ttf") format('truetype');
+}

@@ -1,0 +1,13 @@
+{
+	"prettier": true,
+	"rules": {
+		"@typescript-eslint/prefer-nullish-coalescing": "off",
+		"@typescript-eslint/triple-slash-reference": "off",
+		"require-yield": "off",
+		"import/extensions": "off",
+		"n/file-extension-in-import": "off",
+		"unicorn/filename-case": "off",
+		"import/no-extraneous-dependencies": "off",
+		"new-cap": "off"
+	}
+}

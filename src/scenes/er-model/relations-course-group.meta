@@ -1,0 +1,22 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "cg",
+      "targetTime": 1.6
+    },
+    {
+      "name": "c",
+      "targetTime": 2.6416666666666666
+    },
+    {
+      "name": "p",
+      "targetTime": 4.725
+    },
+    {
+      "name": "s",
+      "targetTime": 6.808333333333334
+    }
+  ],
+  "seed": 57729721
+}

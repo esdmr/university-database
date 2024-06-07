@@ -1,0 +1,27 @@
+{
+  "name": "university-database",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@codemirror/lang-sql": "^6.6.4",
+    "@lezer/python": "^1.1.14",
+    "@lezer/yaml": "^1.0.3",
+    "@motion-canvas/2d": "^3.16.0",
+    "@motion-canvas/core": "^3.16.0",
+    "@motion-canvas/ffmpeg": "^1.1.0",
+    "bidi-js": "^1.0.3"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.16.0",
+    "@motion-canvas/vite-plugin": "^3.15.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.0.0",
+    "webpack": "npm:ignoredep@^200.9999.0",
+    "xo": "^0.58.0"
+  }
+}

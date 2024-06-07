@@ -1,0 +1,14 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "json",
+      "targetTime": 0.6
+    },
+    {
+      "name": "all-mirrors",
+      "targetTime": 5.6416666666666675
+    }
+  ],
+  "seed": 4007009881
+}

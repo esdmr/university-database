@@ -1,0 +1,14 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "create",
+      "targetTime": 2.6416666666666666
+    },
+    {
+      "name": "use",
+      "targetTime": 3.683333333333333
+    }
+  ],
+  "seed": 3362670485
+}

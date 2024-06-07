@@ -1,0 +1,80 @@
+@startchen university
+
+entity Person {
+	ID : INTEGER <<key>>
+	Name {
+		First Name : STRING
+		Last Name : STRING
+	}
+	Date of Birth : DATE
+	Age : Integer <<derived>>
+	Address : STRING
+	Email : STRING
+	Phone Number : STRING
+	Gender : STRING
+}
+entity Student {
+	First Term : INTEGER
+	Terms : INTEGER <<derived>>
+}
+entity Professor {
+	"Title : STRING" as Position
+	Office Number : INTEGER
+}
+entity Department {
+	ID : INT <<key>>
+	Name : STRING
+}
+entity Major {
+	ID : INT <<key>>
+	Name : STRING
+}
+entity Course {
+	ID : INT <<key>>
+	Name : STRING
+	Theoretical Units : INT
+	Practical Units : INT
+	Total Units : INT <<derived>>
+}
+entity "Course Group" as CGroup {
+	ID : INT <<key>>
+	Term : INT
+	Class : INT
+	TimeSlot {
+		Day of Week : INT
+		Start Time : TIME
+		End Time : TIME
+		Duration : DURATION <<derived>>
+	}
+}
+
+relationship Offers {
+}
+relationship "Majors In" as Majors {
+}
+relationship Studies {
+	Grade : DECIMAL
+}
+relationship Teaches {
+}
+relationship Implements {
+}
+
+Person ->- o {Student, Professor}
+
+Student -M- Majors
+Major -N- Majors
+
+Department -1- Offers
+Major -N- Offers
+
+Student -M- Studies
+CGroup -N- Studies
+
+Professor -1- Teaches
+CGroup -N- Teaches
+
+CGroup -M- Implements
+Course -1- Implements
+
+@endchen

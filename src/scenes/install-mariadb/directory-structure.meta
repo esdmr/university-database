@@ -1,0 +1,14 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "directory",
+      "targetTime": 0.6
+    },
+    {
+      "name": "compose",
+      "targetTime": 1.6416666666666666
+    }
+  ],
+  "seed": 2780163838
+}

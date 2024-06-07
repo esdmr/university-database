@@ -1,0 +1,42 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "init",
+      "targetTime": 0.39999999999999997
+    },
+    {
+      "name": "python",
+      "targetTime": 4.941666666666666
+    },
+    {
+      "name": "name",
+      "targetTime": 7.483333333333333
+    },
+    {
+      "name": "version",
+      "targetTime": 8.525
+    },
+    {
+      "name": "build",
+      "targetTime": 9.566666666666666
+    },
+    {
+      "name": "license",
+      "targetTime": 10.608333333333333
+    },
+    {
+      "name": "author",
+      "targetTime": 11.649999999999999
+    },
+    {
+      "name": "email",
+      "targetTime": 12.691666666666665
+    },
+    {
+      "name": "py-req",
+      "targetTime": 13.73333333333333
+    }
+  ],
+  "seed": 3910102956
+}
