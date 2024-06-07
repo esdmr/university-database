@@ -1,5 +1,7 @@
 # University Database
 
+[Persian (فارسی)](README.fa-IR.md)
+
 ![The database schematic](university_database/university.svg)
 
 This project implements a basic university database.
