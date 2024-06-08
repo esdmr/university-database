@@ -1,0 +1,11 @@
+{
+	"insecure-registries": [
+		"https://docker.arvancloud.ir",
+		"https://docker.haiocloud.com"
+	],
+	"registry-mirrors": [
+		"https://docker.arvancloud.ir",
+		"https://docker.iranserver.com",
+		"https://docker.haiocloud.com"
+	]
+}
