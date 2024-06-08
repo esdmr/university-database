@@ -59,7 +59,7 @@ export default makeScene2D(function* (view) {
 		'        f"""INSERT INTO {table}({column_names})\n            VALUE ({placeholders})\n         """,\n',
 		1,
 	);
-	yield* waitForSlide('insert', 5.92);
+	yield* waitForSlide('insert2', 5.92);
 	yield* code().code.insert([9, 0], '        list(kw.values()),\n', 1);
 	yield* waitForSlide('args', 5.16);
 	yield* code().code.append('\n      return cur.lastrowid', 1);
