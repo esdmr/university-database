@@ -1,38 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "insert",
-      "targetTime": 1.6
-    },
-    {
-      "name": "conn",
-      "targetTime": 2.6416666666666666
-    },
-    {
-      "name": "cur",
-      "targetTime": 3.683333333333333
-    },
-    {
-      "name": "col",
-      "targetTime": 4.725
-    },
-    {
-      "name": "ph",
-      "targetTime": 5.766666666666667
-    },
-    {
-      "name": "execute",
-      "targetTime": 6.808333333333334
-    },
-    {
-      "name": "args",
-      "targetTime": 8.891666666666667
-    },
-    {
-      "name": "id",
-      "targetTime": 9.933333333333334
-    }
-  ],
+  "timeEvents": [],
   "seed": 3201065182
 }

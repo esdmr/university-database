@@ -43,7 +43,7 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 	yield* simulateTyping(code().code, 'pdm run jupyter lab');
-	yield* waitForSlide('jupyter');
+	yield* waitForSlide('jupyter', 6.81);
 	yield* appendTerminal(
 		code().code,
 		'\n\nServing notebooks from local directory:\n/home/user/university_database',
@@ -71,6 +71,6 @@ export default makeScene2D(function* (view) {
 		'\n\nUse Control-C to stop this server and shut down\nall kernels (twice to skip confirmation).',
 		1,
 	);
-	yield* waitForSlide('output');
+	yield* waitForSlide('output', 6.52);
 	finishScene();
 });

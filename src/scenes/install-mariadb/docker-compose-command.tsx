@@ -43,10 +43,10 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 	yield* simulateTyping(code().code, 'cd university_database');
-	yield* waitForSlide('cd');
+	yield* waitForSlide('cd', 6.14);
 	yield* appendTerminal(code().code, '\n\n~/university_database $ ', 0.5);
 	yield* simulateTyping(code().code, 'docker compose up -d');
-	yield* waitForSlide('compose');
+	yield* waitForSlide('compose', 9.69);
 	yield* appendTerminal(
 		code().code,
 		'\n\nCreating network "university_database_default"\nwith the default driver',

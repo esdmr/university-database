@@ -41,7 +41,7 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 
-	for (const [tableName, tableColumns] of [
+	for (const [tableName, tableColumns, time] of [
 		[
 			'Student',
 			[
@@ -55,6 +55,7 @@ export default makeScene2D(function* (view) {
 				'gender     CHAR(1)',
 				'first_term INT',
 			],
+			11.28,
 		],
 		[
 			'Professor',
@@ -70,10 +71,12 @@ export default makeScene2D(function* (view) {
 				'title   VARCHAR(128)',
 				'office  INT',
 			],
+			1.68,
 		],
 		[
 			'Department',
 			['id   INT PRIMARY KEY AUTO_INCREMENT', 'name VARCHAR(128)'],
+			3.21,
 		],
 		[
 			'Major',
@@ -82,6 +85,7 @@ export default makeScene2D(function* (view) {
 				'name          VARCHAR(128)',
 				'department_id INT REFERENCES Department (id)',
 			],
+			4.65,
 		],
 		[
 			'Course',
@@ -91,6 +95,7 @@ export default makeScene2D(function* (view) {
 				'theoretical_units INT',
 				'practical_units   INT',
 			],
+			3.69,
 		],
 		[
 			'CourseGroup',
@@ -104,6 +109,7 @@ export default makeScene2D(function* (view) {
 				'professor_id INT REFERENCES Professor (id)',
 				'course_id    INT REFERENCES Course (id)',
 			],
+			4.15,
 		],
 		[
 			'Study',
@@ -113,6 +119,7 @@ export default makeScene2D(function* (view) {
 				'student_id      INT REFERENCES Student (id)',
 				'course_group_id INT REFERENCES CourseGroup (id)',
 			],
+			4.44,
 		],
 		[
 			'Enrollment',
@@ -121,6 +128,7 @@ export default makeScene2D(function* (view) {
 				'student_id INT REFERENCES Student (id)',
 				'major_id   INT REFERENCES Major (id)',
 			],
+			3.88,
 		],
 	] as const) {
 		const columns = Code.createSignal('');
@@ -130,15 +138,13 @@ export default makeScene2D(function* (view) {
 			1,
 		);
 
-		yield* waitFor(1);
 		yield* columns.append(`\n  ${tableColumns[0]}`, 0.5);
 
 		for (const line of tableColumns.slice(1)) {
-			yield* waitFor(0.5);
 			yield* columns.append(`,\n  ${line}`, 0.5);
 		}
 
-		yield* waitForSlide(tableName);
+		yield* waitForSlide(tableName, time);
 	}
 
 	finishScene();

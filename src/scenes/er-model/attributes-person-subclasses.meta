@@ -1,18 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "is",
-      "targetTime": 2.6416666666666666
-    },
-    {
-      "name": "student",
-      "targetTime": 3.683333333333333
-    },
-    {
-      "name": "professor",
-      "targetTime": 5.766666666666667
-    }
-  ],
+  "timeEvents": [],
   "seed": 3695301560
 }

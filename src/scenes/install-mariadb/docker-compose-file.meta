@@ -1,30 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "service",
-      "targetTime": 0.6
-    },
-    {
-      "name": "image",
-      "targetTime": 1.6416666666666666
-    },
-    {
-      "name": "ports",
-      "targetTime": 2.6833333333333336
-    },
-    {
-      "name": "volumes",
-      "targetTime": 3.725
-    },
-    {
-      "name": "restart",
-      "targetTime": 4.766666666666667
-    },
-    {
-      "name": "envs",
-      "targetTime": 9.808333333333334
-    }
-  ],
+  "timeEvents": [],
   "seed": 559330276
 }

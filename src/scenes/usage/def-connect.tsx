@@ -44,13 +44,13 @@ export default makeScene2D(function* (view) {
 	yield* code().code.append('\n\ndef connect() -> pymysql.Connection:', 1);
 	const auth = Code.createSignal('');
 	yield* code().code.append(CODE`\n  return pymysql.connect(${auth}\n  )`, 1);
-	yield* waitForSlide('return');
+	yield* waitForSlide('return', 6.76);
 	yield* auth.append('\n    host="localhost",', 0.5);
 	yield* auth.append('\n    port=3306,', 0.5);
 	yield* auth.append('\n    user="root",', 0.5);
 	yield* auth.append('\n    password="root",', 0.5);
 	yield* auth.append('\n    database="university",', 0.5);
 	yield* auth.append('\n    autocommit=True,', 0.5);
-	yield* waitForSlide('auth');
+	yield* waitForSlide('auth', 9.72);
 	finishScene();
 });

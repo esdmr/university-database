@@ -1,38 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "person",
-      "targetTime": 1.6
-    },
-    {
-      "name": "id",
-      "targetTime": 2.6416666666666666
-    },
-    {
-      "name": "email",
-      "targetTime": 3.683333333333333
-    },
-    {
-      "name": "addr",
-      "targetTime": 4.725
-    },
-    {
-      "name": "phone",
-      "targetTime": 5.766666666666667
-    },
-    {
-      "name": "dob",
-      "targetTime": 6.808333333333334
-    },
-    {
-      "name": "name",
-      "targetTime": 7.8500000000000005
-    },
-    {
-      "name": "fl-name",
-      "targetTime": 10.891666666666667
-    }
-  ],
+  "timeEvents": [],
   "seed": 2727498837
 }

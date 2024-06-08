@@ -45,22 +45,22 @@ export default makeScene2D(function* (view) {
 		'c_dept = insert("Department", name="Computer")',
 		1,
 	);
-	yield* waitForSlide('dept');
+	yield* waitForSlide('dept', 6.31);
 	yield* code().code.append(
 		'\n\nce_maj = insert("Major",\n  name="Computer Engineering",\n  department_id=c_dept)',
 		1,
 	);
-	yield* waitForSlide('major');
+	yield* waitForSlide('major', 2.88);
 	yield* code().code.append(
 		'\n\nds_crs = insert("Course", name="Data Structures",\n  theoretical_units=3, practical_units=0)',
 		1,
 	);
-	yield* waitForSlide('course');
+	yield* waitForSlide('course', 4.56);
 	yield* code().code.append(
 		'\n\njt_prof = insert("Professor", f_name="Jake",\n  l_name="Taylor", address="Some address idk",\n  title="Computer Professor",\n  phone="009898989898", birth=date(1980, 2, 5),\n  email="vip@prof.co.uk", gender="M", office=3)',
 		1,
 	);
-	yield* waitForSlide('prof');
+	yield* waitForSlide('prof', 3.67);
 	yield* all(
 		code().code.replace(
 			[
@@ -100,12 +100,12 @@ export default makeScene2D(function* (view) {
 		'\n\naa_stu = insert("Student", f_name="Ahmed",\n  l_name="Adams", address="Other address idk",\n  phone="001847362152", birth=date(2004, 12, 7),\n  email="rando@gmail.com", gender="M",\n  first_term=3)',
 		1,
 	);
-	yield* waitForSlide('student');
+	yield* waitForSlide('student', 3.33);
 	yield* code().code.append(
 		'\n\naa_enr = insert("Enrollment",\n  student_id=aa_stud, major_id=ce_maj)',
 		1,
 	);
-	yield* waitForSlide('enrollment');
+	yield* waitForSlide('enrollment', 3.31);
 	yield* all(
 		code().code.remove(lines(4), 1),
 		code().code.replace(
@@ -130,11 +130,11 @@ export default makeScene2D(function* (view) {
 		'\n\nds_cg = insert("CourseGroup", term=4,\n  classroom=120, start_time=time(10, 0, 0),\n  end_time=time(12, 0, 0), professor_id=jt_prof,\n  week_day=2, course_id=ds_crs)',
 		1,
 	);
-	yield* waitForSlide('course-group');
+	yield* waitForSlide('course-group', 5.35);
 	yield* code().code.append(
 		'\n\naa_ds_stu = insert("Study", student_id=aa_stu,\n  course_group_id=ds_cg, grade=18.25)',
 		1,
 	);
-	yield* waitForSlide('study');
+	yield* waitForSlide('study', 4.17);
 	finishScene();
 });

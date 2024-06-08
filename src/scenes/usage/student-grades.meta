@@ -1,46 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "id",
-      "targetTime": 1.6
-    },
-    {
-      "name": "conn",
-      "targetTime": 2.6416666666666666
-    },
-    {
-      "name": "cur",
-      "targetTime": 3.683333333333333
-    },
-    {
-      "name": "select",
-      "targetTime": 5.766666666666667
-    },
-    {
-      "name": "from",
-      "targetTime": 6.808333333333334
-    },
-    {
-      "name": "where",
-      "targetTime": 7.8500000000000005
-    },
-    {
-      "name": "cg",
-      "targetTime": 8.891666666666667
-    },
-    {
-      "name": "c",
-      "targetTime": 9.933333333333334
-    },
-    {
-      "name": "project",
-      "targetTime": 10.975
-    },
-    {
-      "name": "result",
-      "targetTime": 12.016666666666666
-    }
-  ],
+  "timeEvents": [],
   "seed": 2190347854
 }

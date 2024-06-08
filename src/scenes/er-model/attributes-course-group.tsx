@@ -126,18 +126,18 @@ export default makeScene2D(function* (view) {
 	yield* slideTransition(Direction.Right);
 
 	yield* reveal($.vertices.courseGroup);
-	yield* waitForSlide('course-group');
+	yield* waitForSlide('course-group', 2.42);
 	yield* reveal([$.attributes.id, $.edges.id]);
-	yield* waitForSlide('id');
+	yield* waitForSlide('id', 2.83);
 	yield* reveal([$.attributes.term, $.edges.term]);
-	yield* waitForSlide('term');
+	yield* waitForSlide('term', 1.46);
 	yield* reveal([$.attributes.class, $.edges.class]);
-	yield* waitForSlide('class');
+	yield* waitForSlide('class', 1.29);
 	yield* reveal([$.attributes.timeSlot, $.edges.timeSlot]);
 	yield* reveal([$.attributes.dow, $.edges.dow]);
 	yield* reveal([$.attributes.start, $.edges.start]);
 	yield* reveal([$.attributes.end, $.edges.end]);
-	yield* waitForSlide('timeSlot');
+	yield* waitForSlide('timeSlot', 7.39);
 
 	finishScene();
 });

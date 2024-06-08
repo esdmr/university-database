@@ -50,13 +50,13 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* slideTransition(Direction.Right);
-	yield* waitForSlide('directory');
+	yield* waitForSlide('directory', 4.7);
 	yield* all(
 		folder().position.edit((v) => v.add(-100), 1),
 		file().position.edit((v) => v.add(100), 1),
 		file().opacity(1, 1),
 		delay(0.4, line().opacity(1, 0.6)),
 	);
-	yield* waitForSlide('compose');
+	yield* waitForSlide('compose', 4.34);
 	finishScene();
 });

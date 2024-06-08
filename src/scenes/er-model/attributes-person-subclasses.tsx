@@ -108,14 +108,14 @@ export default makeScene2D(function* (view) {
 
 	yield* reveal($.vertices.person);
 	yield* reveal([$.vertices.is, $.edges.is]);
-	yield* waitForSlide('is');
+	yield* waitForSlide('is', 3.62);
 	yield* reveal([$.vertices.student, $.edges.student]);
 	yield* reveal([$.attributes.firstTerm, $.edges.firstTerm]);
-	yield* waitForSlide('student');
+	yield* waitForSlide('student', 6.72);
 	yield* reveal([$.vertices.professor, $.edges.professor]);
 	yield* reveal([$.attributes.title, $.edges.title]);
 	yield* reveal([$.attributes.office, $.edges.office]);
-	yield* waitForSlide('professor');
+	yield* waitForSlide('professor', 4.36);
 
 	finishScene();
 });

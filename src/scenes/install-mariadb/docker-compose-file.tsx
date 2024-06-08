@@ -43,26 +43,26 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* slideTransition(Direction.Right);
-	yield* waitForSlide('service');
+	yield* waitForSlide('service', 3.4);
 
 	yield* service.append('\n    image: mariadb', 1);
-	yield* waitForSlide('image');
+	yield* waitForSlide('image', 2.64);
 	yield* service.append('\n    ports:\n      - 3306:3306', 1);
-	yield* waitForSlide('ports');
+	yield* waitForSlide('ports', 3.6);
 
 	yield* all(
 		service.append('\n    volumes:\n      - dbdata:/var/lib/mysql', 1),
 		topLevel.append('\n\nvolumes:\n  dbdata:', 1),
 	);
 
-	yield* waitForSlide('volumes');
+	yield* waitForSlide('volumes', 3.88);
 	yield* service.append('\n    restart: always', 1);
-	yield* waitForSlide('restart');
+	yield* waitForSlide('restart', 4.46);
 	yield* service.append('\n    environment:', 1);
 	yield* service.append('\n      MYSQL_ROOT_PASSWORD: root', 1);
 	yield* service.append('\n      MYSQL_USER: user', 1);
 	yield* service.append('\n      MYSQL_PASSWORD: pass', 1);
 	yield* service.append('\n      MYSQL_DATABASE: university', 1);
-	yield* waitForSlide('envs');
+	yield* waitForSlide('envs', 2.97);
 	finishScene();
 });

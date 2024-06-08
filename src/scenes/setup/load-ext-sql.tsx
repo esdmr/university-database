@@ -40,11 +40,11 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 	yield* code().code.append('%load_ext sql', 1);
-	yield* waitForSlide('load_ext');
+	yield* waitForSlide('load_ext', 11.25);
 	yield* code().code.append(
 		'\n\n%sql mysql+pymysql://root:root@localhost:3306/\nuniversity?charset=utf8mb4',
 		1,
 	);
-	yield* waitForSlide('auth');
+	yield* waitForSlide('auth', 3.74);
 	finishScene();
 });

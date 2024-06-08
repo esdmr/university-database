@@ -1,38 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "dept",
-      "targetTime": 1.6
-    },
-    {
-      "name": "major",
-      "targetTime": 2.6416666666666666
-    },
-    {
-      "name": "course",
-      "targetTime": 3.683333333333333
-    },
-    {
-      "name": "prof",
-      "targetTime": 4.725
-    },
-    {
-      "name": "student",
-      "targetTime": 7.766666666666667
-    },
-    {
-      "name": "enrollment",
-      "targetTime": 8.808333333333334
-    },
-    {
-      "name": "course-group",
-      "targetTime": 11.85
-    },
-    {
-      "name": "study",
-      "targetTime": 12.891666666666666
-    }
-  ],
+  "timeEvents": [],
   "seed": 2853804483
 }

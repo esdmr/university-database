@@ -10,6 +10,6 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* slideTransition(Direction.Right);
-	yield* waitForSlide('logo');
+	yield* waitForSlide('logo', 12.33);
 	finishScene();
 });

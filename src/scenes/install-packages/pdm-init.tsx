@@ -37,7 +37,7 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* simulateTyping(code().code, 'pdm init');
-	yield* waitForSlide('init');
+	yield* waitForSlide('init', 10.12);
 	yield* appendTerminal(
 		code().code,
 		'\n\nCreating a pyproject.toml for PDM…',
@@ -53,7 +53,7 @@ export default makeScene2D(function* (view) {
 	yield* appendTerminal(code().code, '\n 1. cpython@3.10', 0.5);
 	yield* appendTerminal(code().code, '\n 2. cpython@3.8', 0.5);
 	yield* appendTerminal(code().code, '\nPlease select (0): ', 0.5);
-	yield* waitForSlide('python');
+	yield* waitForSlide('python', 10.05);
 	yield* appendTerminal(
 		code().code,
 		'\n\nVirtualenv is created successfully at\n/home/user/university_database/.venv',
@@ -65,23 +65,23 @@ export default makeScene2D(function* (view) {
 		'\n\nProject name (university_database):',
 		1,
 	);
-	yield* waitForSlide('name');
+	yield* waitForSlide('name', 1.51);
 	yield* appendTerminal(code().code, '\nProject version (0.1.0):', 1);
-	yield* waitForSlide('version');
+	yield* waitForSlide('version', 1.34);
 	yield* appendTerminal(
 		code().code,
 		'\n\nDo you want to build this project for\ndistribution? [y/n] (n):',
 		1,
 	);
-	yield* waitForSlide('build');
+	yield* waitForSlide('build', 2.68);
 	yield* appendTerminal(code().code, '\n\nLicense (MIT):', 1);
-	yield* waitForSlide('license');
+	yield* waitForSlide('license', 1.65);
 	yield* appendTerminal(code().code, '\nAuthor name (User):', 1);
-	yield* waitForSlide('author');
+	yield* waitForSlide('author', 1.56);
 	yield* appendTerminal(code().code, '\nAuthor email (user@example.com):', 1);
-	yield* waitForSlide('email');
+	yield* waitForSlide('email', 1.46);
 	yield* appendTerminal(code().code, '\nPython requires (==3.12.*):', 1);
-	yield* waitForSlide('py-req');
+	yield* waitForSlide('py-req', 2.59);
 	yield* appendTerminal(
 		code().code,
 		'\n\nProject is initialized successfully',

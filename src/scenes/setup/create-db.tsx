@@ -41,8 +41,8 @@ export default makeScene2D(function* (view) {
 	yield* slideTransition(Direction.Right);
 	yield* code().code.append('\nDROP DATABASE IF EXISTS university;', 1);
 	yield* code().code.append('\nCREATE DATABASE university;', 1);
-	yield* waitForSlide('create');
+	yield* waitForSlide('create', 11.28);
 	yield* code().code.append('\nUSE university;', 1);
-	yield* waitForSlide('use');
+	yield* waitForSlide('use', 3.76);
 	finishScene();
 });

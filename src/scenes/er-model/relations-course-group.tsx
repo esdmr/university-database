@@ -134,16 +134,16 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 	yield* reveal($.vertices.courseGroup);
-	yield* waitForSlide('cg');
+	yield* waitForSlide('cg', 3.5);
 	yield* reveal($.vertices.course);
 	yield* reveal([$.vertices.implements, $.nodes.implements]);
-	yield* waitForSlide('c');
+	yield* waitForSlide('c', 2.4);
 	yield* reveal($.vertices.professor);
 	yield* reveal([$.vertices.teaches, $.nodes.teaches]);
-	yield* waitForSlide('p');
+	yield* waitForSlide('p', 2.83);
 	yield* reveal($.vertices.student);
 	yield* reveal([$.vertices.studies, $.nodes.studies]);
-	yield* waitForSlide('s');
+	yield* waitForSlide('s', 2.85);
 
 	finishScene();
 });

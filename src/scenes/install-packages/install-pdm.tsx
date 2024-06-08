@@ -44,7 +44,7 @@ export default makeScene2D(function* (view) {
 
 	yield* slideTransition(Direction.Right);
 	yield* simulateTyping(code().code, 'pip3 install --user pdm');
-	yield* waitForSlide('pdm');
+	yield* waitForSlide('pdm', 12.79);
 	yield* appendTerminal(code().code, '\n\nCollecting pdm', 1);
 	yield* appendTerminal(
 		code().code,

@@ -53,7 +53,7 @@ export default makeScene2D(function* (view) {
 	);
 
 	yield* slideTransition(Direction.Right);
-	yield* waitForSlide('json');
+	yield* waitForSlide('json', 8.4);
 	yield* all(
 		insecure.append('\n        "https://docker.arvancloud.ir"', 1),
 		mirrors.append('\n        "https://docker.arvancloud.ir"', 1),
@@ -63,6 +63,6 @@ export default makeScene2D(function* (view) {
 		mirrors.append(',\n        "https://docker.haiocloud.com"', 1),
 	);
 	yield* mirrors.append(',\n        "https://docker.iranserver.com"', 1);
-	yield* waitForSlide('all-mirrors');
+	yield* waitForSlide('all-mirrors', 4.58);
 	finishScene();
 });

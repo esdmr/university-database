@@ -141,23 +141,23 @@ export default makeScene2D(function* (view) {
 	yield* slideTransition(Direction.Right);
 
 	yield* reveal($.vertices.person);
-	yield* waitForSlide('person');
+	yield* waitForSlide('person', 2.28);
 	yield* reveal([$.attributes.id, $.edges.id]);
-	yield* waitForSlide('id');
+	yield* waitForSlide('id', 3.33);
 	yield* reveal([$.attributes.email, $.edges.email]);
-	yield* waitForSlide('email');
+	yield* waitForSlide('email', 2.37);
 	yield* reveal([$.attributes.address, $.edges.address]);
-	yield* waitForSlide('addr');
+	yield* waitForSlide('addr', 1.08);
 	yield* reveal([$.attributes.phone, $.edges.phone]);
-	yield* waitForSlide('phone');
+	yield* waitForSlide('phone', 1.53);
 	yield* reveal([$.attributes.dateOfBirth, $.edges.dateOfBirth]);
-	yield* waitForSlide('dob');
+	yield* waitForSlide('dob', 1.46);
 	yield* reveal([$.attributes.name, $.edges.name]);
-	yield* waitForSlide('name');
+	yield* waitForSlide('name', 0.86);
 	yield* $.attributes.name().type('', 1);
 	yield* reveal([$.attributes.firstName, $.edges.firstName]);
 	yield* reveal([$.attributes.lastName, $.edges.lastName]);
-	yield* waitForSlide('fl-name');
+	yield* waitForSlide('fl-name', 4.65);
 
 	finishScene();
 });

@@ -39,7 +39,7 @@ export default makeScene2D(function* (view) {
 		code().code,
 		'pdm add pymysql jupyterlab\nipython-sql sqlalchemy',
 	);
-	yield* waitForSlide('add');
+	yield* waitForSlide('add', 9.69);
 	yield* appendTerminal(
 		code().code,
 		'\n\nAdding packages to default dependencies:\npymysql, jupyterlab, ipython-sql, sqlalchemy',

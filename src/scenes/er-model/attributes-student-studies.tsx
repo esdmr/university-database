@@ -82,7 +82,7 @@ export default makeScene2D(function* (view) {
 	yield* reveal([$.vertices.courseGroup, $.vertices.student]);
 	yield* reveal([$.vertices.studies, $.nodes.studies]);
 	yield* reveal([$.attributes.grade, $.edges.grade]);
-	yield* waitForSlide('p');
+	yield* waitForSlide('p', 3.38);
 
 	finishScene();
 });

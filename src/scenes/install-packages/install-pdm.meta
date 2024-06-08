@@ -1,10 +1,5 @@
 {
   "version": 0,
-  "timeEvents": [
-    {
-      "name": "pdm",
-      "targetTime": 1.7500000000000009
-    }
-  ],
+  "timeEvents": [],
   "seed": 504125568
 }
